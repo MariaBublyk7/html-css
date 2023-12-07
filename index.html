@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>SocPrime Test</title>
+        <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+        <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    </head>
+    <body>
+        <header class="header-wrapper">
+            <nav class="navbar-menu">
+              <div class="logo">
+                <img src="images/black_socprime_logo.png" alt="LOGO">
+              </div>
+              <div class="account">
+                <p>AB</p>
+              </div>
+            </nav>
+        </header>
+        <div class="content">
+          <div class="container">
+            <p class="main-title">Welcome ipsum dolor sit amet, consectetur adipiscing elit!</p>
+            <div class="card-plan-wrapper">
+              <div class="card-plan modalCard" id="modalCard">
+                <img class="header-image" src="images/image-one.png">
+                <div class="card-info">
+                  <div class="icon-info">
+                    <img src="images/icon-one.png">
+                    <p class="title">Lorem ipsum dolor</p>
+                  </div>
+                  <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                </div>
+                <div class="bottom-info">
+                  <div class="bottom-title-wrapper">
+                    <div class="bottom-title">
+                      <p class="top-title">Current Plan</p>
+                      <div class="line"></div>
+                    </div>
+                    <p class="info-plan">Enterprise</p>
+                  </div>
+                  <div class="btn-wrapper">
+                    <button id="modalBtn" type="button" class="green-square-btn modalBtn">Get Started</button>
+                    <a href="#" onclick="linkHandler(event)">Compare plans</a>
+                  </div>
+                </div>
+                <div class="footer-line"></div>
+              </div>
+              <div class="card-plan modalCard" id="modalCard2">
+                <img class="header-image" src="images/image-two.png">
+                <div class="card-info">
+                  <div class="icon-info">
+                    <img src="images/icon-two.png">
+                    <p class="title">Lorem ipsum</p>
+                  </div>
+                  <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+                <div class="bottom-info">
+                  <div class="bottom-title-wrapper">
+                    <div class="bottom-title">
+                      <p class="top-title">Current Plan</p>
+                      <div class="line"></div>
+                    </div>
+                    <p class="info-plan">On Demand</p>
+                  </div>
+                  <div class="btn-wrapper">
+                    <button id="modalBtn2" type="button" class="green-square-btn modalBtn">Get Started</button>
+                    <a href="#" onclick="linkHandler(event)">Compare plans</a>
+                  </div>
+                </div>
+                <div class="footer-line"></div>
+              </div>
+              <div class="card-plan modalCard" id="modalCard3">
+                <img class="header-image" src="images/image-three.png">
+                <div class="card-info">
+                  <div class="icon-info">
+                    <img src="images/icon-three.png">
+                    <p class="title">Lorem</p>
+                  </div>
+                  <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+                <div class="bottom-info">
+                  <div class="bottom-title-wrapper">
+                    <div class="bottom-title">
+                      <p class="top-title">Current Plan</p>
+                      <div class="line"></div>
+                    </div>
+                    <p class="info-plan">Community</p>
+                  </div>
+                  <div class="btn-wrapper">
+                    <button id="modalBtn3" type="button" class="green-square-btn modalBtn">Get Started</button>
+                    <a href="#" onclick="linkHandler(event)">Compare plans</a>
+                  </div>
+                </div>
+                <div class="footer-line"></div>
+              </div>
+            </div>
+            <div class="action-wrapper">
+              <a href="#">Join Discord</a>
+              <div></div>
+              <a href="#">Contact Us</a>
+            </div>
+          </div>
+
+          <!-- The Modals -->
+          <div id="simpleModal" class="modal">
+            <div class="plan-modal-content">
+              <span class="closeBtn cancel-modal1">&times;</span>
+              <div class="modal-content-wrapper">
+                <h2 class="modal-title">Get Started</h2>
+                <p class="modal-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="modal-btn-wrap">
+                  <button type="button" class="modal-green-square-btn" id="#getStartedModal1">Get Started</button>
+                  <button type="button" class="modal-black-square-btn cancel-modal1">Cancel</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="simpleModal2" class="modal">
+            <div class="plan-modal-content">
+              <span class="closeBtn cancel-modal2">&times;</i></span>
+              <div class="modal-content-wrapper">
+                <h2 class="modal-title">Get Started</h2>
+                <p class="modal-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="modal-btn-wrap">
+                  <button type="button" class="modal-green-square-btn" id="#getStartedModal2">Get Started</button>
+                  <button type="button" class="modal-black-square-btn cancel-modal2">Cancel</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="simpleModal3" class="modal">
+            <div class="plan-modal-content">
+              <span class="closeBtn cancel-modal3">&times;</i></span>
+              <div class="modal-content-wrapper">
+                <h2 class="modal-title">Get Started</h2>
+                <p class="modal-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="modal-btn-wrap">
+                  <button type="button" class="modal-green-square-btn" id="#getStartedModal3">Get Started</button>
+                  <button type="button" class="modal-black-square-btn cancel-modal3">Cancel</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      <script src="/js/main.js"></script>
+    </body>
+</html>

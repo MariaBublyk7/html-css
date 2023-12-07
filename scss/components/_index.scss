@@ -1,0 +1,218 @@
+.content{
+    background-color: $dark-blue;
+    background-image: url("../../images/bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+
+
+    .main-title{
+        color: white;
+        font-size: 30px;
+        align-items: center;
+        text-align: center;
+        padding: 35px 0 30px 0;
+
+        @media only screen and (max-width: 992px) {
+            font-size: 24px;
+        }
+    }
+
+    .card-plan-wrapper{
+        display: flex;
+        justify-content: center;
+
+        @media only screen and (max-width: 1200px) {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card-plan:not(:last-child){
+            margin-right: 40px;
+
+            @media only screen and (max-width: 1200px) {
+                margin-bottom: 30px;
+                margin: auto;
+                margin-bottom: 30px;
+            }
+        }
+
+        .card-plan::before{
+            content: "";
+            position: absolute;
+            top: 13px;
+            left: -6px;
+            width: 46px;
+            height: 2px;
+            background: $toxic-green;
+            transform: rotate(-43deg);
+        }
+
+        .card-plan::after{
+            content: "";
+            position: absolute;
+            bottom: 13px;
+            right: -14px;
+            width: 59px;
+            height: 2px;
+            transform: rotate(-48deg);
+            display: inline-block;
+            display: inline-block;
+            background: $toxic-green;
+        }
+
+        .card-plan:hover{
+            box-shadow: $green-shadow 0px 54px 55px, $green-shadow 0px -12px 30px, $green-shadow 0px 4px 6px, $green-shadow 0px 12px 13px, $green-shadow 0px -3px 5px;
+        }
+
+        .card-plan:active{
+            box-shadow: $green-shadow 0px 54px 55px, $green-shadow 0px -12px 30px, $green-shadow 0px 4px 6px, $green-shadow 0px 12px 13px, $green-shadow 0px -3px 5px;
+        }
+
+        .card-plan{
+            width: 372px;
+            min-height: 628px;
+            border: 1px solid $toxic-green;
+            position: relative;
+            background-color: $dark-blue;
+            cursor: pointer;
+            background-image: url("../../images/bg3.png");
+            clip-path: polygon(9% 0, 100% 0, 100% 95%, 92% 100%, 0 100%, 0 5%);
+
+            @media only screen and (max-width: 1200px) {
+                margin: auto; 
+            }
+
+            @media only screen and (max-width: 768px) {
+                width: 345px;
+            }
+
+            .card-info{
+                top: -43px;
+                position: relative;
+                margin: 0 30px;
+
+                .icon-info{
+                    display: flex;
+                    height: 106px;
+
+                    img{
+                        height: 80px;
+                        width: 80px;
+                        margin-right: 20px;
+                    }
+
+                    .title{
+                        color: white;
+                        font-size: 30px;
+                        font-weight: bold;
+                        line-height: 34px;
+                        display: flex;
+                        align-items: center;
+                    }
+                }
+
+                .description{
+                    font-size: 14px;
+                    color: $grey;
+                }
+            }
+
+            .bottom-info{
+                margin: 0 30px;
+                bottom: 60px;
+                position: absolute;
+
+                .bottom-title-wrapper{
+                    .bottom-title{
+                        display: flex;
+
+                        .top-title{
+                            font-size: 10px;
+                            text-transform: uppercase;
+                            color: $grey;
+                            margin-right: 5px;
+                            margin: 0;
+                            width: 72px;
+                        }
+
+                        .line{
+                            width: 215px;
+                            border-top: 1px solid $toxic-green;
+                            margin: 0 10px;
+                            margin-top: 7px;
+                            opacity: 0.25;
+                        }
+                    }
+
+                    .info-plan{
+                        color: white;
+                        font-size: 16px;
+                        margin-bottom: 25px;
+                    }
+                }
+
+                .btn-wrapper{
+                    display: flex;
+    
+                    .green-square-btn{
+                        height: 48px;
+                        padding: 5px 16px;
+                        font-size: 14px;
+                        font-weight: 600;
+                        border-radius: 4px;
+                        border: 1px solid $toxic-green;
+                        color: white;
+                        margin-right: 24px;
+                    }
+
+                    .green-square-btn:hover{
+                        border-radius: 4px;
+                        background-color: $toxic-green;
+                        color: $dark-blue;
+                    }
+    
+                    a{
+                        color: $toxic-green;
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    a:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+
+            .footer-line{
+                width: 100%;
+                border-top: 1px solid $toxic-green;
+                opacity: 0.25; 
+                bottom: 26px;
+                position: absolute;
+            }
+        }
+    }
+
+    .action-wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 30px 0;
+
+        a{
+            color: $toxic-green;
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+
+        div{
+            height: 32px;
+            border-left: 1px solid $toxic-green;
+            margin: 0 10px;
+        }
+    }
+} 

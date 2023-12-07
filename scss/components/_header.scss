@@ -1,0 +1,33 @@
+.header-wrapper{
+    background-color: $dark-blue;
+    height: 56px;
+    padding: 10px 7px;
+
+    .navbar-menu{
+        display: flex;
+        justify-content: space-between;
+
+        .logo{
+            display: flex;
+    
+            img{
+                height: 28px;
+                width: 64px;
+            }
+        }
+
+        .account{
+            border-radius: 100%;
+            background-color: $orange;
+            width: 32px;
+            height: 32px;
+            padding: 5px;
+
+            p{
+                color: white;
+                font-size: 14px;
+                text-align: center;
+            }
+        }
+    }
+}

@@ -1,0 +1,100 @@
+.modal {
+    padding-top: 240px;
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0,0,0,0.4); 
+
+    .plan-modal-content {
+        background-color: $dark-blue;
+        margin: auto;
+        padding: 0 20px 40px;
+        width: 45%;
+
+        @media only screen and (max-width: 768px) {
+            width: 95%;
+        }
+
+        .modal-content-wrapper{
+            .modal-title{
+                color: white;
+                display: flex;
+                justify-content: center;
+                font-size: 24px;
+                font-weight: bold;
+                margin-bottom: 20px;
+            }
+        
+            .modal-description{
+                color: $grey;
+                font-size: 14px;
+                text-align: center;
+                padding: 0 25px;
+            }
+
+            .modal-btn-wrap{
+                display: flex;
+                justify-content: center;
+                padding-top: 20px;
+
+                @media only screen and (max-width: 768px) {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .modal-green-square-btn{
+                    height: 36px;
+                    font-size: 14px;
+                    font-weight: 600;
+                    border-radius: 4px;
+                    background-color: $toxic-green;
+                    color: $dark-blue;
+                    margin-right: 24px;
+                    padding: 5px 16px;
+                    text-transform: uppercase;
+
+                    @media only screen and (max-width: 768px) {
+                        width: 100%;
+                        max-width: 160px;
+                        margin: auto;
+                        margin-bottom: 20px;
+                    }
+                }
+
+                .modal-black-square-btn{
+                    border: 1px solid $toxic-green;
+                    border-radius: 4px;
+                    color: #F9F9F9;
+                    height: 36px;
+                    padding: 5px 16px;
+
+                    @media only screen and (max-width: 768px) {
+                        width: 100%;
+                        max-width: 160px;
+                        margin: auto;
+                    }
+                }
+            }
+        }
+
+        .closeBtn {
+            color: white;
+            display: flex;
+            justify-content: flex-end;
+            font-size: 26px;
+        }
+          
+        .closeBtn:hover,
+        .closeBtn:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    }
+}

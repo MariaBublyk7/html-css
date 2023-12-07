@@ -1,0 +1,221 @@
+.container {
+  margin: 0 100px;
+}
+
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+.header-wrapper {
+  background-color: white;
+  height: 60px;
+}
+.header-wrapper .navbar-menu {
+  display: flex;
+}
+.header-wrapper .navbar-menu .logo {
+  display: flex;
+  padding: 10px;
+}
+.header-wrapper .navbar-menu .logo img {
+  height: 32px;
+  width: 39px;
+  margin-right: 5px;
+}
+.header-wrapper .navbar-menu .logo p {
+  color: black;
+  font-size: 20px;
+}
+.header-wrapper .navbar-menu .nav {
+  display: flex;
+}
+.header-wrapper .navbar-menu .nav .link {
+  color: black;
+}
+
+.content .section-about {
+  margin-bottom: 70px;
+}
+.content .section-about .about-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.content .section-about .about-text {
+  max-width: 600px;
+}
+.content .section-about .about-statistics {
+  display: grid;
+  grid-gap: 25px;
+}
+.content .section-about .about-statistics .first-block {
+  grid-row: 1;
+  grid-column: 1;
+}
+.content .section-about .about-statistics .second-block {
+  grid-row: 1;
+  grid-column: 2;
+}
+.content .section-about .about-statistics .third-block {
+  grid-row: 2;
+  grid-column: 1;
+}
+.content .section-about .about-statistics .four-block {
+  grid-row: 2;
+  grid-column: 2;
+}
+.content .section-about .about-statistics .first-block, .content .section-about .about-statistics .second-block, .content .section-about .about-statistics .third-block, .content .section-about .about-statistics .four-block {
+  background-color: #ECF3FD;
+  height: 145px;
+  border-radius: 10px;
+  max-width: 290px;
+  padding: 20px;
+}
+
+footer {
+  background-color: #1455F5;
+  padding: 30px 0 15px 0;
+}
+footer h5 {
+  color: white;
+  font-size: 17px;
+}
+footer p {
+  color: white;
+}
+footer .footer-grid {
+  display: grid;
+  grid-gap: 30px;
+}
+footer .footer-grid .logo-wrap {
+  display: flex;
+  grid-column: 1;
+  grid-row: 1;
+}
+footer .footer-grid .logo-wrap img {
+  width: 36px;
+  height: 30px;
+  margin-right: 5px;
+}
+footer .footer-grid .navigation-wrap {
+  display: block;
+  grid-column: 2;
+  grid-row: 1;
+}
+footer .footer-grid .navigation-wrap .navigation-menu {
+  list-style: none;
+  margin-top: 20px;
+  padding: 0;
+}
+footer .footer-grid .navigation-wrap .navigation-menu p {
+  font-size: 14px;
+}
+footer .footer-grid .contact-wrap {
+  display: block;
+  grid-column: 3;
+  grid-row: 1;
+}
+footer .footer-grid .contact-wrap p {
+  color: white;
+}
+footer .footer-grid .networks-wrap {
+  display: block;
+  grid-column: 4;
+  grid-row: 1;
+}
+footer .footer-grid .networks-wrap p {
+  font-size: 15px;
+}
+footer hr {
+  color: white;
+}
+footer .copyright {
+  margin-top: 15px;
+}
+footer .copyright p {
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 14px;
+}/*# sourceMappingURL=main.css.map */
